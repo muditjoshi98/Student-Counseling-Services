@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>Forms</title>
+<style>
+       div.t1{ border:2px solid #0F0F0E   ; background-color: #5D6D7E; width: 1200px; align:center; margin-left: 20px;}
+       h1,p,h3{ color: white; padding-left: 50px; }
+       p{font-size: 50;}
+       img{ height:90px; width: 90px;}
+       table {margin-left: 90px;}
+       th, td{ margin-left: 20px; padding: 15px;}
+       th{text-align:left; padding-right: 45px;}
+	   input{height: 20px}
+       input.t3{background-color: #52BE80; float: right; }
+       div.t2{ border: 2px solid gray; background-color: #5D6D7E; width: 1000px; text-align: center; margin-left: 100px; padding: 10px;}
+       div.t4 {margin-left: 20px; border: 1px solid black; height: 900px; width: 1250px; padding: 25px;}
+       
+       
+</style>
+</head>
+<div class="t4">
+<body>
+	<div class="t1">
+	<h1>Registration Form</h1>
+	<p>please fill in your information to register yourelf</p>
+	</div>
+	<br><br><br>
+	<form action="registration.php" method="POST">
+	<table>
+		<tr><th><Label for="user">Roll Number*</label></th>
+		<td><input type="number" name="roll_no" placeholder="Roll Number"></td></tr>
+		<tr><th><label for="user"> Name*</label> </th>
+		<td><input type="text" name="fname" placeholder="First Name"></td>
+		<td><input type="text" name="lname" placeholder="Last Name"></td></tr>
+		<tr><th><Label for="user">Gender</label></th>
+		<td><input type="text" name="sex" placeholder="Gender"></td></tr>
+		<tr><th>Date of Birth:</th><td><input type="date" name="dob" placeholder="Birth date"></td></tr>
+		<tr><th><Label for="user">Father's Name*</label></th>
+		<td><input type="text" name="father_name" placeholder="Name"></td></tr>
+		<tr><th><label for="user">Department</label></th>
+		<td><input type="text" name="dept_code" value=""></td></tr>
+		<tr><th><label for="user">Hostel</label></th>
+		<td><input type="text" name="hostel_id" value=""></td></tr>
+		<tr><th><label for="user">Contact number*</label></th>
+		<td><input type="number" name="contact_no" value=""></td></tr>
+		<tr><th><label for="user">Password*</label></th>
+		<td><input  type="password" name="password" value=""></td></tr>
+
+		
+		<tr><th></th><td colspan="2"><input type="submit" name="submit" value="Register" /></td></tr>
+	</table>
+	<br><br>
+<div class="t2">
+<h3>Welcome to IIITDMJ counseling</h3>
+</div>
+</form>
+</body>
+</div>
+</html>
