@@ -1,0 +1,36 @@
+
+<html> 
+<body> 
+<center> 
+<h1>Counsel Request Form</h1> 
+<form action="request.php" method="post" id="reg"> 
+<table cellpadding = "10"> 
+<tr> 
+<td>Roll No*</td> 
+<td><input type="number" name="roll_no" maxlength="7"></td> 
+</tr> 
+<tr> 
+<td>Counseler ID*</td> 
+<td><input type="number" name="cons_id" maxlength="7"></td> 
+</tr> 
+<tr>  
+<td>Counsel Type*</td> 
+<td><select name="counsel_type" required >
+                    <option value="" disabled selected >-------Type-------</option>
+                    <option value="home_sickness">Home Sickness</option>
+                    <option value="studies">Studies</option>
+                    <option value="lonliness">Lonliness</option>
+                    <option value="college_environment">College Environment</option>
+                    </select></td> 
+</tr>
+<tr>
+<td>Description</td> 
+<td><textarea rows="4" cols="50" name="desc" form="reg"></textarea></td> 
+</tr> 
+<td><input type="submit" name="submit" value="Submit"></td>
+</tr> 
+</table> 
+</form> 
+</center> 
+</body> 
+</html>
