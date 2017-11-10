@@ -1,3 +1,8 @@
+.incorrect {
+	color:red;
+	text-shadow: 0 0 3px #FF0000;
+}
+
 .background-image {
   background-image: url('cons.jpg');
   background-size: cover;

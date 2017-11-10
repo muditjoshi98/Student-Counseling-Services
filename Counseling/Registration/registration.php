@@ -1,27 +1,11 @@
 <?php
 
 //Check all the required fields are filled 
-if(!($_POST['roll_no'])||!($_POST['fname']))
+if(!($_POST['roll_no'])||!($_POST['fname'])||!($_POST['father_name'])||!($_POST['contact_no'])||!($_POST['password'])||!($_POST['email']))
 { 
 echo 'All the fields marked as * are compulsary.<br>'; 
 $validationFlag = false; 
 }
-else if(!($_POST['father_name']))
-{ 
-echo 'All the fields marked as * are compulsary.<br>'; 
-$validationFlag = false; 
-} 
-else if(!($_POST['contact_no']))
-{ 
-echo 'All the fields marked as * are compulsary.<br>'; 
-$validationFlag = false; 
-} 
-else if(!($_POST['password']))
-{ 
-echo 'All the fields marked as * are compulsary.<br>'; 
-$validationFlag = false; 
-}
- 
 
 else{ 
 $roll_no = $_POST['roll_no']; 
@@ -34,6 +18,7 @@ $dept = $_POST['dept_code'];
 $hostel = $_POST['hostel_id']; 
 $contact_no = $_POST['contact_no'];
 $password = $_POST['password']; 
+$email = $_POST['email'];
 }
 
 
@@ -50,8 +35,8 @@ if(!$db){
 die("Unable to select database"); 
 } 
 //Create Insert query 
-$query = "INSERT INTO student (roll_no, first_name, last_name, password, date_of_birth, contact_no, fathers_name, sex, dept_code, hostel_id ) 
-VALUES ('$roll_no','$fname','$lname','$password','$dob','$contact_no','$fathers_name','$gender','$dept','$hostel')"; 
+$query = "INSERT INTO student (roll_no, first_name, last_name, email, password, date_of_birth, contact_no, fathers_name, sex, dept_code, hostel_id ) 
+VALUES ('$roll_no','$fname','$lname','$email','$password','$dob','$contact_no','$fathers_name','$gender','$dept','$hostel')"; 
 //Execute query 
 $results = mysql_query($query); 
  
@@ -59,6 +44,6 @@ $results = mysql_query($query);
 if($results == FALSE) 
 echo mysql_error() . '<br>'; 
 else 
-echo 'Data inserted successfully! '; 
+echo 'Data inserted successfully! Welcome to IIITDMJ Counseling.'; 
 
 ?>
