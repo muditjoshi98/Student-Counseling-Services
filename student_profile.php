@@ -1,22 +1,22 @@
 <?php
 session_start();
+$get=$_GET["user_id"];
 ?>
 	
 <!doctype html>
 <html lang="en">
 <head>
 		 <style>
-		 
-		
-
-		 
+		 		 
  body {
-      background-image: url("assets/img/gender.jpg");
+      background-image: url("assets/img/hope.jpg");
 min-height: 100%;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
-background-size: cover;}
+background-size: cover;
+opacity: .95;
+}
 
   }
   ul.nav-pills {
@@ -27,10 +27,8 @@ background-size: cover;}
       height: 250px;
       font-size: 28px;
   }
-  #section1 {color: #fff; background-color: #1ABC9C ; margin-left: 175px; width: 100%; padding: 7px; margin-top: 20px; margin-top: 20px;}
-  #section2 {color: #fff; background-color: #73C6B6;padding: 7px; margin-top: 20px; margin-top: 20px; }
-  #section3 {color: #fff; background-color: #2471A3; margin-left: 175px; width: 100%; padding: 7px; margin-top: 20px; margin-top: 20px; margin-bottom: 10px}
   
+ 
   
   .style_prevu_kit
 {
@@ -55,18 +53,16 @@ background-size: cover;}
     box-shadow: 0px 0px 150px #000000;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.2);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.1);   
+    -ms-transform: scale(1.2);   
     -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.1);
+    -moz-transform: scale(1.2);
     transition: all 200ms ease-in;
     transform: scale(1.1);
 }
   
-  @media screen and (max-width: 850px) {
-    #section1, #section2, #section3,{
-        margin-left: 250px;
+
     }
   }
   
@@ -84,7 +80,7 @@ background-size: cover;}
   
 </head>
 		
-	</head>
+		
 	<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 	
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -93,12 +89,12 @@ background-size: cover;}
      <a class="navbar-brand" href="#">Student Counselling Service</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a  href="#">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Services <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Personal</a></li>
-          <li><a href="#">Academic</a></li>
-          <li><a href="#">Career</a></li>
+          <li><a href="personal.php?user_id=<?php echo $get ; ?>">Personal</a></li>
+          <li><a href="academic.php?user_id=<?php echo $get ; ?>">Academic</a></li>
+          <li><a href="career.php?user_id=<?php echo $get ; ?>">Career</a></li>
         </ul>
       </li>
       <li><a href="#">Request</a></li>
@@ -128,26 +124,25 @@ background-size: cover;}
 				$result = mysql_query($qry);
 		
 				$row = mysql_fetch_array( $result);
-				echo '<br><br><br><h2><center><marquee>Welcome '.$row['first_name'].'! to our counselling service</marquee></center></h2><br><br>'; 
+				echo '<br><br><br><h2><center><marquee>Welcome '.$row['first_name'].' to our counselling service.</marquee></center></h2><br><br>'; 
 				echo '<div><div class="container" style="float: left; width:25%; margin-left:3% ">            
 				<img src="assets/img/profile.jpg" class="img-circle" alt="Cinque Terre" width="200" height="200"> 
 				</div><br>
 				 
 					
-					 <div class="container" style="float: right; width:70%">
-          <table class="table table-striped" style="width: 60%">
-        <tr>
-        <tr><td style="font-size: 20px; background-color: #ECF0F1">'.$row['first_name'].' '.$row['last_name'].'</td></tr>
-		<td style="font-size: 20px">'.$row['roll_no'].'</td></tr>
-        <tr><td style="font-size: 20px; background-color:#ECF0F1    ">'.$row['dept_code'].'</td></tr>
-		<tr><td style="font-size: 20px">'.$row['contact_no'].'</td></tr>
+					 <div class="container" style="float: right; width:70%; ">
+          <br><table class="table table-striped" style="width: 4%; padding:2px; width:50%; ">
+        <tr><td style="font-size: 20px; background-color: #ECF0F1; width: 40%;padding:4px">Name</td><td style="font-size: 20px; background-color: #ECF0F1; padding:4px">'.$row['first_name'].' '.$row['last_name'].'</td></tr>
+		<tr><td style="font-size: 20px; background-color: #ABEBC6  ;width: 40%;padding:4px" >Roll Number</td><td style="font-size: 20px ; background-color: #ABEBC6;padding:4px  ">'.$row['roll_no'].'</td></tr>
+        <tr><td style="font-size: 20px; background-color: #ECF0F1;width: 40%;padding:4px" >Discipline</td><td style="font-size: 20px; background-color:#ECF0F1 ;padding:4px   ">'.$row['dept_code'].'</td></tr>
+		<tr><td style="font-size: 20px;  background-color: #ABEBC6  ;width: 40%;padding:4px ">Contact Number</td><td style="font-size: 20px; background-color: #ABEBC6 ;padding:4px ">'.$row['contact_no'].'</td></tr>
 	  </table>
   </div>
 </div>';
     
-	echo'<br><br><div style=" width:100%;">
+	echo'<br><br><br><div style=" width:100%;">
 
-<div class="style_prevu_kit" style="background-color: #1ABC9C; width:60%; margin-left:22%; margin-top:5%; margin-bottom: 1%">
+<br><div class="style_prevu_kit" style="background-color: #73C6B6; width:60%; margin-left:20%; margin-top:5%; margin-bottom: 1%">
 <h2>Personal Counselling</h2>
         <p style="font-size: 17px" >Personal counselling is a one on one counselling process of a patient and a trained psychiatrist,
 		psychotherapist or psychologist.
@@ -155,12 +150,12 @@ background-size: cover;}
 		Individual counselling is popular because it provides the setting for a patient to talk openly about his/her problems and disclose his/her feelings, without fear of being judged. 
 		Individual counselling helps patients explore themselves better and work out their issues, 
 		and basically discuss issues which they may not be comfortable discussing with others.</p></div>
-<div class="style_prevu_kit" style="background-color:#73C6B6; width:60%; margin-left: 10%; margin-top:1%; margin-bottom: 1% ">
+<div class="style_prevu_kit" style="background-color:#2471A3; width:60%; margin-left: 10%; margin-top:1%; margin-bottom: 1% ">
 <h2>Academic Counselling</h2>
         <p style="font-size: 17px">Academics is one of the biggest reasons of stress and anxiety in students and parents alike. 
 		So academic counselling is counselling pertaining to time management, procrastination and study tips. 
 		We also provide you with the guides that helps you to clear your doubts clearly and regularly.</p></div>
-<div class="style_prevu_kit" style="background-color:#2471A3; width:60%; margin-left:22%; margin-top:1%; margin-bottom: 1% ">
+<div class="style_prevu_kit" style="background-color:#F1948A; width:60%; margin-left:20%; margin-top:1%; margin-bottom: 1% ">
 <h2>Career Counselling</h2>
         <p style="font-size: 17px">Career counselling is for both students who are about to decide their
 		careers and professionals, to guide them on their professional growth trajectory.

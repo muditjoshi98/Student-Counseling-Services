@@ -336,20 +336,28 @@ div.menu nav li:last-child{
 	justify-content: center;
 	flex-wrap: wrap;
 
-	max-width: 800px;
+	max-width: auto;
 	width: 80%;
 }
 
 .contact form input{
 	padding: 15px;
-	flex: 1;
-	margin-right: 30px;
+    margin  : 10px 10px 10px 150px;
 	font-size: 18px;
 	color: #555;
 }
+.contact form textarea {
+    padding: 15px;
+	margin: 10px 10px 10px 220px;
+	font-size: 18px;
+	color: #555;
+}   
 
 .contact form .btn{
-	padding: 18px 42px;
+	 padding: 15px;
+	margin-left: 65px;
+	font-size: 18px;   
+	color: #fff;
 }
 
 

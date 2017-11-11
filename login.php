@@ -17,7 +17,7 @@
 		<img class="responsive-img" src="assets/img/logo.jpg" width="100%" alt="College Logo">	
 	</div>
     <div class="menu">
-		<h2><a href="#">Student Counselling Services</a></h2>
+		<h2>Student Counselling Services</h2>
 		<nav>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="whyconselling.html">Why Conselling??</a></li>

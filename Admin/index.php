@@ -21,7 +21,7 @@
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="../whyconselling.html">Why Conselling??</a></li>
 				<li><a href="../aboutus.html">About Us</a></li>
-				<li><a href="../login.html">Login</a></li>
+				<li><a href="../login.php">Login</a></li>
 				<li><a href="../register.html">Register</a></li>
 			</nav>
 		</div>

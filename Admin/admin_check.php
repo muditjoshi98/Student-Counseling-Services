@@ -20,7 +20,7 @@
         $array=mysqli_fetch_array($result);
         if($password == $array['password']) {
             $_SESSION['user_id']=$admin_id;
-            header('Location:admin.php?msg='.$admin_id);
+            header('Location:home1.php?msg='.$admin_id);
         }
         else{ 
             //Login failed 

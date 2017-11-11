@@ -43,7 +43,8 @@ $results = mysql_query($query);
 //Check if query executes successfully 
 if($results == FALSE) 
 echo mysql_error() . '<br>'; 
-else 
+else {
 echo 'Data inserted successfully! Welcome to IIITDMJ Counseling.'; 
-
+echo '<a href="index.html">Click Here</a>';
+}
 ?>

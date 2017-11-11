@@ -1,0 +1,43 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-header {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    opacity:0.75;
+    color: white;
+}
+
+.check {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+#header {
+    border-bottom: 2px solid #6b7482;
+}
+
+li {
+   font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#side {
+    border-right: 2px solid #6b7482;
+}
+
+.col-sm-2 {
+    box-shadow: 0px 0px 10px #888888;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+select {
+    max-width: auto;
+}

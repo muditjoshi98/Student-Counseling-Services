@@ -1,0 +1,59 @@
+/* Three columns side by side */
+
+
+
+
+.column {
+    
+    width: 29.0%;
+    margin: 4px;
+    padding: 4px 10px;
+	float: left;
+	
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	padding: 2%;
+	width:100%;
+	margin-left:4px;
+	background-color:#E5E7E9;
+	opacity: 1;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 10px;
+	
+	width:350px;
+	
+
+	
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+	margin:4px;
+}
+
+.title {
+    color: grey;
+	font-size:18px;
+}
+
+ body {
+      background-image: url("../img/hope.jpg");
+min-height: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+opacity: 0.95;
+ }
+
+  }
+

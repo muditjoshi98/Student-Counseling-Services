@@ -155,6 +155,20 @@ div.menu nav li:last-child{
 	}
 }
 
+.navbar-header {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    opacity:0.75;
+    color: white;
+}
+
+.check {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
 /*-------------
  	login
 -------------*/

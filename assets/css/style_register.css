@@ -13,7 +13,6 @@ div.menu{
   align-items: center;
   color: #fff;
   padding: 35px 100px 35px;
-  background-color: #878686
 }
 
 div.menu h2{
@@ -56,10 +55,34 @@ div.menu nav li:last-child{
 }
 
 
-/*---------------------------*/
+/*-------------
+    Register
+--------------*/
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image:url(../img/back.jpg);
+    height: 660px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    opacity: 1;
+}
 
 .form {
-  margin: 150px 100px;
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;       
 }
 
 *, *:before, *:after {
@@ -68,21 +91,23 @@ div.menu nav li:last-child{
   box-sizing: border-box;
 }
 
-body {
-  background-color: #5499C7;
-}
 
 form {
-  max-width: 300px;
-  margin: 10px auto;
-  padding: 10px 20px;
-  background: rgba(19, 35, 49, 0.9);
-  border-radius: 8px;
+    background: rgb(19, 35, 49);
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    top: 200px;
+    left: 0;
+    position:absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    right: 0;
+    padding: 10px 10px;
 }
 
 h1 {
   margin: 0 0 30px 0;
-  text-align: center;
   color:white;
 }
 

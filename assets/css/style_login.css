@@ -74,13 +74,10 @@ div.menu nav li:last-child{
 .background-image {
     background-image:url(../img/back.jpg);
     height: 660px;
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;   
     background-size: cover;
-    opacity: 0.75;
 }
 
 * {
