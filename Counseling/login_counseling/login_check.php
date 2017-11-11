@@ -1,7 +1,6 @@
-
 <?php 
-echo $_POST['Ssubmit'];
-echo $_POST['Csubmit'];
+session_start();
+
 if($_POST['Ssubmit']) {
 	$email=$_POST['Semail'];
 	$password = $_POST['Spassword']; 
@@ -21,8 +20,9 @@ if($_POST['Ssubmit']) {
 	$qry= "SELECT password FROM student WHERE email='$email'";
 	$result=mysqli_query($link,$qry) or die(mysqli_error($link));
 	$array=mysqli_fetch_array($result);
-	if($password == $array['password']) {
-		header('Location:student.php');
+	if($password == $array['password']) { 
+		$_SESSION["user_id"] = $email; 
+		header('Location:student_profile.php?user_id='.$email);
 	}
 	else{ 
 		//Login failed 
