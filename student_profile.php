@@ -11,7 +11,7 @@ session_start();
 
 		 
  body {
-      background-image: url("gender.jpg");
+      background-image: url("assets/img/gender.jpg");
 min-height: 100%;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -105,7 +105,7 @@ background-size: cover;}
 	  </ul>
 	   <ul class="nav navbar-nav navbar-right">
       <li><a href="#">Edit Profile</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="student_logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </nav>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/style_register.css">
+  
+</head>
+    
+<body><div>
+      <img class="responsive-img" src="assets/img/logo.jpg" width="100%" alt="College Logo">  
+    </div>
+
+    <div class="menu">
+      <h2>Student Counselling Services</h2>
+      <nav>
+        <li><a href=index.html>Home</a></li>
+        <li><a href="whyconselling.html">Why Conselling??</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </nav>
+    </div>
+    <div class="form">
+      <form action="registration.php" method="POST" >
+      
+        <h1>Sign Up</h1>
+        
+        
+
+          <label>Roll Number<span class="req">*</span></label>
+            <input type="text" required autocomplete="off" name="roll_no"/>
+          
+          <label>First Name<span class="req">*</span></label>
+            <input type="text" required autocomplete="off" name="fname"/>
+			
+			<label>Last Name</label>
+            <input type="text" required autocomplete="off" name="lname"/>
+			
+			<label>Gender</label>
+            <input type="text" required autocomplete="off" name="sex"/>
+			
+			<label>Date Of Birth<span class="req">*</span></label>
+            <input type="date" required autocomplete="off" name="dob"/>
+			
+			<label>Father's Name<span class="req">*</span></label>
+            <input type="text" required autocomplete="off" name="father_name"/>
+			
+			<label>Department<span class="req">*</span></label>
+            <input type="text" required autocomplete="off" name="dept_code"/>
+			
+			<label>Hostel<span class="req">*</span></label>
+            <input type="text" required autocomplete="off" name="hostel_id"/>
+			
+			<label>Contact Number<span class="req">*</span></label>
+            <input type="number" required autocomplete="off" name="contact_no"/>
+			
+			<label>Email Id<span class="req">*</span></label>
+            <input type="email" required autocomplete="off" name="email"/>
+		
+			<label>Password<span class="req">*</span></label>
+            <input type="password" required autocomplete="off" name="password"/>
+			
+			
+          
+          
+        <button type="submit" name="submit">Register</button>
+      </form>
+	  </div>
+      
+    </body>
+</html>
+  
+  
+</body>
+</html>
